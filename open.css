@@ -514,7 +514,10 @@ border-radius: 25px 25px ;
     width: 70px;
     border-radius: 20px 20px ;
 }
-
+#footer
+{
+  background-color: white;
+}
 .cancel-button:hover
 {
    
