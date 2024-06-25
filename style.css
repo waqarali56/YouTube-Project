@@ -134,12 +134,7 @@ border-radius: 50px;
 cursor: pointer; /* Pointer cursor on hover */
 }
 
-.bell_pic
-{height: 25px;
-  width: 25px;
-  border-radius: 50px;
 
-}
 .noti_button
 {
   border: none;
@@ -161,11 +156,14 @@ cursor: pointer; /* Pointer cursor on hover */
 { 
   background-color: rgb(48, 49, 49);
   display: none;
-  min-width: 50px;
+  min-width: 100px;
+  margin-top: 10px;
   position: absolute;
 
 }
 .dropdown_content a {
+  padding: 20px;
+ 
   color: rgb(255, 255, 255);
   text-decoration: none;
   display: block;
@@ -174,7 +172,6 @@ cursor: pointer; /* Pointer cursor on hover */
 .show
 {
   display: block;
-
 }
 
 
@@ -189,37 +186,31 @@ main{
 
 
 
-#small_navigation
+.large_navigation
 {
 
 height: 100%;
-width: 10%;
+width: 15%;
 color: white;
+position: fixed;
 
+z-index: 2;
 
 }
 
-.parent-navi-item
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.parent-navi-item .navi_item
-{
-display: block;
+
+ .navi_item
+{display: flex;
 margin-top: 25px;
 padding: 10px;
 margin-left: 5px;
 font-size: 10px;
 }
 
-.navi_item .icon1
+.navi_item h3
 {
-
-  align-items: center;
-  margin-left: 10px;
+    display: inline;
 }
 .navi_item:hover{
 background-color: rgb(28, 28, 28);
@@ -227,19 +218,42 @@ background-color: rgb(28, 28, 28);
 
 
 
-
-
-
-
-
-
-
-
-
-.large_topBar_and_Video_container
+.navi_item img
 {
-  width: 85%;
-  
+  width: 17px;
+  height: 17px;
+  margin-right: 50px;
+}
+
+
+.small_navigation
+{
+  width: 3%;
+}
+
+.small_navigation h3
+{
+  display: none;
+}
+
+.small_navigation hr
+{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+ .large_topBar_and_Video_container
+{
+  width: 97%;
+  margin-left: 3%;
 
 }
 
@@ -252,10 +266,10 @@ background-color: rgb(28, 28, 28);
 
                                    /*--------------------- main section -------------- */
 
-.topBar_and_Video_container
+ .topBar_and_Video_container
 {
-  
-width: 95%;
+  margin-left: 15%;
+width: 85%;
 height: 100px;
 
 }

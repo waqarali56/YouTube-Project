@@ -6,9 +6,10 @@ let s=document.querySelector(".topBar_and_Video_container");
 let bt=document.querySelector("#three_bar");
 bt.onclick = ()=>{
     
-      
+    let ss = document.querySelector(".large_navigation");
+    ss.classList.toggle("small_navigation");
+    
     if (s.classList.contains("large_topBar_and_Video_container")) {
-       
         s.classList.remove("large_topBar_and_Video_container");
         s.classList.add("topBar_and_Video_container");
     } else {
