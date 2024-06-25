@@ -32,7 +32,7 @@ cursor: pointer;
 {
 
 background-color: black;
-width: 100%;
+width: 100vw;
 position:fixed;
 top: 0; /* Ensure the header sticks to the top */
 z-index: 10;       
@@ -269,8 +269,9 @@ background-color: rgb(28, 28, 28);
  .topBar_and_Video_container
 {
   margin-left: 15%;
-width: 85%;
+width: 100vw;
 height: 100px;
+
 
 }
 
@@ -279,18 +280,18 @@ height: 100px;
 #top_bar_container
 {
 background-color: black;
-
-padding-left: 5px;
+position: fixed;
 z-index: 10;   
 height:30px;
 /* width: 1460px; 
 width: calc(100% - 60px);  Adjusted for fixed navigation width chatgpt */
-width: 100%;
+width: 100vw;
 color: white;
 display: flex;
 align-items: center;
 flex-direction: row; 
-overflow-x: scroll;
+    overflow-x: auto; /* Use auto instead of scroll */
+    white-space: nowrap; /* Ensure content does not wrap */
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 #top_bar_container::-webkit-scrollbar
@@ -318,6 +319,7 @@ align-items: center;
 background-color: rgb(40, 40, 40);
 color: white;
 border-radius: 5px 5px ;
+white-space: nowrap; /* Ensure items do not wrap */
 }
 .category:hover{
 background-color: rgb(171, 16, 16);
@@ -342,7 +344,7 @@ height: 200px;
 
 #video_container
 {
- padding-top: 10px;
+ padding-top: 30px;
 
 display: grid;
 grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
@@ -421,6 +423,8 @@ margin-right: 5px;
 
 @media screen and (max-width: 600px) {
 
+
+
 #three_bar
 {
   display: none;
@@ -435,21 +439,18 @@ margin-right: 5px;
   display: none;
 }
 
-#small_navigation
+.large_navigation
 {
   display: none;
 }
 
-#small_navigation
-{
-  display: none;
-}
 
-#main_container {
-  margin-top: 50px;
+
+.topBar_and_Video_container
+{
   margin-left: 0;
-  padding-left: 0;
 }
+
 #top_bar_container
 {
 
