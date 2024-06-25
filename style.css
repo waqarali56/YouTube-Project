@@ -14,6 +14,11 @@ padding: 0px;
 box-sizing: border-box;
 
 }
+
+i{
+  color: white;
+}
+
 a{
 text-decoration: none;
 color: white;
@@ -129,6 +134,49 @@ border-radius: 50px;
 cursor: pointer; /* Pointer cursor on hover */
 }
 
+.bell_pic
+{height: 25px;
+  width: 25px;
+  border-radius: 50px;
+
+}
+.noti_button
+{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+.notifications_box
+{
+  background-color: transparent;
+  
+
+}
+.notifications_box a:hover 
+{background-color: #1f1f1f;}
+
+.dropdown_content
+{ 
+  background-color: rgb(48, 49, 49);
+  display: none;
+  min-width: 50px;
+  position: absolute;
+
+}
+.dropdown_content a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+}
+
+.show
+{
+  display: block;
+
+}
+
 
                                    /*--------------------- side_bar section -------------- */
 
@@ -145,21 +193,33 @@ main{
 {
 
 height: 100%;
-width: 15%;
+width: 10%;
 color: white;
 
 
 }
 
-.navi_item
+.parent-navi-item
 {
-
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.parent-navi-item .navi_item
+{
+display: block;
 margin-top: 25px;
 padding: 10px;
+margin-left: 5px;
 font-size: 10px;
+}
+
+.navi_item .icon1
+{
+
+  align-items: center;
+  margin-left: 10px;
 }
 .navi_item:hover{
 background-color: rgb(28, 28, 28);
@@ -176,10 +236,10 @@ background-color: rgb(28, 28, 28);
 
 
 
-#large_topBar_and_Video_container
+.large_topBar_and_Video_container
 {
   width: 85%;
-  height: 100px;
+  
 
 }
 
@@ -192,14 +252,12 @@ background-color: rgb(28, 28, 28);
 
                                    /*--------------------- main section -------------- */
 
-#topBar_and_Video_container
+.topBar_and_Video_container
 {
   
 width: 95%;
 height: 100px;
-.navi_item{
-  flex-direction: row;
-}
+
 }
 
 
